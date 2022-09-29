@@ -3,12 +3,12 @@ class PostsController < ApplicationController
 
   def index
     posts = Post.all
-    render json: posts, include: ['author', 'author.name']
+    render json: posts#, include: ['author', 'author.name']
   end
 
   def show
     post = Post.find(params[:id])
-    render json: post, include: ['author', 'author.name']
+    render json: post#, include: ['author', 'author.name']
   end
 
   def summary
