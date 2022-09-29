@@ -1,8 +1,8 @@
-class PostSummarySerializer < ActiveModel::Serializer
-  attributes :summary
+# class PostSummarySerializer < ActiveModel::Serializer
+#   attributes :summary
 
 
-  def summary
-    "#{self.object.title} - #{self.object.content[0..40]}..."
-  end
-end
+#   def summary
+#     "#{self.object.title} - #{self.object.content[0..40]}..."
+#   end
+# end

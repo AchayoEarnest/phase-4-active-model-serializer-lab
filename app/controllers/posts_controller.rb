@@ -13,12 +13,12 @@ class PostsController < ApplicationController
 
   def summary
     post = Post.find(params[:id])
-    render json: post, serializer: PostSummarySerializer
+    render json: post, serializer: PostSerializer
   end
 
   def summaries
     posts = Post.all
-    render json: posts, each_serializer: PostSummarySerializer
+    render json: posts, each_serializer: PostSerializer
   end
 
   private
